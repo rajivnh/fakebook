@@ -43,6 +43,6 @@ public class SecurityConfig {
         return (web) -> web.ignoring()
         		.requestMatchers(PathRequest.toStaticResources().atCommonLocations())
         		.and().ignoring()
-        		.requestMatchers("/*.html");
+        		.requestMatchers("/*.html"); 
     }
 }
