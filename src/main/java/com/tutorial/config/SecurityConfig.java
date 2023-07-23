@@ -35,7 +35,7 @@ public class SecurityConfig {
         http.csrf(csrf -> csrf.disable());
         http.headers(header -> header.frameOptions(config -> config.sameOrigin()));
         
-        return http.build();
+        return http.build();  
     }
     
     @Bean
